@@ -1,0 +1,284 @@
+PYTHON FUNCTIONS, LISTS AND STRINGS
+-----------------------------------
+
+
+1. Function Without Parameters
+
+def add():
+    a = int(input("Enter value: "))
+    b = int(input("Enter value: "))
+    res = a + b
+    print(res)
+
+if __name__ == '__main__':
+    add()
+
+
+
+--------------------------------------------------
+
+
+2. Function With Parameters
+
+def add(x, y):
+    res = x + y
+    print(res)
+
+if __name__ == '__main__':
+    a = int(input("Enter value: "))
+    b = int(input("Enter value: "))
+    add(a, b)
+
+
+
+--------------------------------------------------
+
+
+3. Function Returning a Value
+
+def add(x, y):
+    res = x + y
+    return res
+
+if __name__ == '__main__':
+    a = int(input("Enter value: "))
+    b = int(input("Enter value: "))
+    res = add(a, b)
+    print(res)
+
+
+
+--------------------------------------------------
+
+
+4. Function Returning Multiple Values
+
+def cal(x, y):
+    res1 = x + y
+    res2 = x - y
+    res3 = x * y
+    res4 = x / y
+    return res1, res2, res3, res4
+
+if __name__ == '__main__':
+    a = int(input("Enter value: "))
+    b = int(input("Enter value: "))
+
+    r1, r2, r3, r4 = cal(a, b)
+
+    print("Addition:", r1)
+    print("Subtraction:", r2)
+    print("Multiplication:", r3)
+    print("Division:", r4)
+
+
+
+--------------------------------------------------
+LISTS IN PYTHON
+--------------------------------------------------
+
+Create an empty list
+
+ls = []
+print(type(ls))
+
+ls = list()
+print(type(ls))
+
+
+Create a list with values
+
+ls = [11, 22, 33, 44, 55, 66]
+print(ls)
+
+
+Access elements using index
+
+for i in range(len(ls)):
+    print(ls[i])
+
+
+Access elements directly
+
+for x in ls:
+    print(x)
+
+
+Add elements to list
+
+ls.append(12)
+ls.append(34)
+
+print(ls)
+
+
+List indexing examples
+
+print(ls[0])        # First element
+print(ls[-6])       # Negative indexing
+
+
+List slicing
+
+print(ls[2:3])
+print(ls[::2])
+print(ls[::-2])
+print(ls[::-1])     # Reverse list
+
+
+
+--------------------------------------------------
+STRINGS IN PYTHON
+--------------------------------------------------
+
+s = "Ashish"
+
+print(s[1:3])       # Slice string
+print(s[::-1])      # Reverse string
+
+
+Count digits in a number
+
+a = 1234
+print(len(str(a)))
+
+
+Check data type
+
+print(type(s))
+
+
+
+REVERSE A STRING WITHOUT BUILT-IN FUNCTION
+------------------------------------------
+
+a = "Chetan"
+b = ""
+
+for i in a:
+    b = i + b
+
+print(b)
+
+Output
+natehC
+
+PYTHON BASIC PROGRAMS (HACKERRANK)
+
+----------------------------------
+Q1. Say "Hello, World!" With Python
+----------------------------------
+
+print("Hello, World!")
+
+
+
+----------------------------------
+Q2. Python If-Else
+----------------------------------
+
+n = int(input())
+
+if n % 2 != 0:
+    print("Weird")
+
+elif n >= 2 and n <= 5:
+    print("Not Weird")
+
+elif n >= 6 and n <= 20:
+    print("Weird")
+
+else:
+    print("Not Weird")
+
+
+
+----------------------------------
+Q3. Arithmetic Operators
+----------------------------------
+
+a = int(input())
+b = int(input())
+
+print(a + b)
+print(a - b)
+print(a * b)
+
+
+
+----------------------------------
+Q4. Python Division
+----------------------------------
+
+a = int(input())
+b = int(input())
+
+print(a // b)
+print(a / b)
+
+
+
+----------------------------------
+PYTHON BASIC PROGRAMS (HACKERRANK)
+
+----------------------------------
+Q1. Say "Hello, World!" With Python
+----------------------------------
+
+print("Hello, World!")
+
+
+
+----------------------------------
+Q2. Python If-Else
+----------------------------------
+
+n = int(input())
+
+if n % 2 != 0:
+    print("Weird")
+
+elif n >= 2 and n <= 5:
+    print("Not Weird")
+
+elif n >= 6 and n <= 20:
+    print("Weird")
+
+else:
+    print("Not Weird")
+
+
+
+----------------------------------
+Q3. Arithmetic Operators
+----------------------------------
+
+a = int(input())
+b = int(input())
+
+print(a + b)
+print(a - b)
+print(a * b)
+
+
+
+----------------------------------
+Q4. Python Division
+----------------------------------
+
+a = int(input())
+b = int(input())
+
+print(a // b)
+print(a / b)
+
+
+
+----------------------------------
+Q5. Loops
+----------------------------------
+
+n = int(input())
+
+for i in range(n):
+    print(i ** 2)
